@@ -24,10 +24,10 @@ bytecode executable file; elements 1 to \var{n} are the remaining
 arguments \nth{arg}{1} to \nth{arg}{n}.
 
 \begin{windows}
-On Windows, the Ocaml runtime expands the "*" and "?" wildcards in
-arguments before anything else. The string array "Sys.argv" is
-constructed using the expanded arguments. If such a behavior were to be
-avoided, it is possible to write a custom entry point in C.
+On Windows, the OCaml runtime expands the "*" and "?" wildcards in arguments
+before anything else. The string array "Sys.argv" is constructed using the
+expanded arguments. To avoid this behaviour, a custom entry point can be written
+in C, as outlined in section~\ref{ss:main_c}.
 \end{windows}
 
 As mentioned in chapter~\ref{c:camlc}, the bytecode executable files

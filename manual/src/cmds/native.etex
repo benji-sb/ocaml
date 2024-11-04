@@ -185,8 +185,8 @@ the following environment variables are also consulted:
 \begin{windows}
 On Windows, an "ocamlopt"-generated executable will expand the "*" and "?"
 wildcards in arguments before anything else. The string array "Sys.argv" is
-constructed using the expanded arguments. If such a behavior were to be avoided,
-it is possible to write a custom entry point in C.
+constructed using the expanded arguments. To avoid this behaviour, a custom
+entry point can be written in C, as outlined in section~\ref{ss:main_c}.
 \end{windows}
 
 
